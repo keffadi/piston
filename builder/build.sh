@@ -26,7 +26,7 @@ fetch_packages(){
         -v "$PWD/build":'/piston/packages' \
         --tmpfs /piston/jobs \
         -dit \
-        -p $port:2000 \
+        -p $port:80 \
         --name builder_piston_instance \
         ghcr.io/engineer-man/piston
     
@@ -61,4 +61,4 @@ fetch_packages $SPEC_FILE
 build_container $TAG
 
 echo "Start your custom piston container with"
-echo "$ docker run --tmpfs /piston/jobs -dit -p 2000:2000 $TAG"
+echo "$ docker run --tmpfs /piston/jobs -dit -p 80:80 $TAG"
