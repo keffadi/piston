@@ -19,7 +19,7 @@ One of `DEBUG`, `INFO`, `WARN`, `ERROR` or `NONE`
 
 ```yaml
 key: PISTON_BIND_ADDRESS
-default: 0.0.0.0:2000
+default: 0.0.0.0:80
 ```
 
 Port and IP address to bind the Piston API to.
