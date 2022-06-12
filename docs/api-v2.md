@@ -4,7 +4,7 @@ Piston exposes an API for managing packages and executing user-defined code.
 
 The API is broken in to 2 main sections - packages and jobs.
 
-The API is exposed from the container, by default on port 2000, at `/api/v2/`.
+The API is exposed from the container, by default on port 80, at `/api/v2/`.
 
 All inputs are validated, and if an error occurs, a 4xx or 5xx status code is returned.
 In this case, a JSON payload is sent back containing the error message as `message`
